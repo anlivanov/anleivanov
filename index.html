@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__wrapper">
+                     <div class="header__logo-section">
+                        <div class="header__lang">
+                            <h3>
+                                <a class="header__lang-link" href="#">RU</a>
+                            </h3>
+                            <a class="header__lang-link" href="#">
+                                <img src="img/header/langue.png" alt="language">
+                            </a>
+                        </div>
+                        <div class="header__logo">
+                            <a href="#"> 
+                                <picture> 
+                                    <source srcset="img/header/logo1024.svg" media="(max-width: 1024px)">
+                                        <img src="img/header/LOGO.svg" alt="logo_Becors" class="header-img__logo">
+                                    </picture>
+                                </a>
+                                <h1 class="header__title">
+                                    <a href="#">BECORS</a>
+                                </h1>
+                        </div> 
+                     </div>
+                    <div class="header__menu menu">
+                        <div class="menu__icon">
+                            <span></span>
+                        </div>
+                        <nav class="menu__body">
+                            <div class="menu__search search">
+                                <form class="menu__form">
+                                    <input type="search" class="search__input" placeholder="Введите модель станка">
+                                    <button type='button' class="search__button"><img src="img/header/magnifier.svg"></button>
+                                </form>
+                            </div>
+                            <ul class="menu__list">
+                                <li><a class="menu__link" href="#">Главная</a></li>
+                                <li><a class="menu__link" href="#">Контакты</a></li>  
+                                <li><a class="menu__link" href="#">О нас</a></li> 
+                                <li><a class="menu__link" href="#">Новости</a></li>
+                            </ul>
+                        </nav>
+                    </div> 
+                </div>
+            </header>
+            <main class="main">
+                <div class="first-block">
+                    <div class="first-block__content">
+                        <p class="first-block__text first-block__text_desktop-version first-block__text_desktop-version1">
+                           Проектирование и ремонт различных типов промышленного оборудования
+                        </p>
+                        <p class="first-block__text first-block__text_desktop-version first-block__text_desktop-version2">
+                            20 лет качественной и уверенной работы на рынке
+                         </p>
+                        <p class="first-block__text first-block__text_mobile-version">
+                            BECORS это поставщик качественных и эффективных решений по ремонту и модернизации промышленного оборудования
+                        </p>
+                        <button type="button" class="first-block__button __pop-up-button" data-pop-button="modal1">Отправить заявку</button>
+                    </div>
+                        <div class="first-block__img ibg">
+                            <img src="img/first-block/mainimg.jpg" alt="main_img">
+                        </div>
+                </div>
+
+                <section class="services">
+                    <div class="services__title-wrapper">
+                        <h3 class="services__title section-title">Широкий профиль услуг</h3>
+                    </div>
+                    <div class="services__main-description">
+                        <div class="services__text">
+                            <ul>
+                                <li>Все виды промышленного оборудования</li>
+                                <li>Полный объем работ от оценки до пусконаладки</li>
+                                <li>Используем надежное и распространненное ЧПУ</li>
+                                <li>Постоянно развиваемся</li>
+                            </ul>
+                        </div>
+                        <div class="services__img-wrapper">
+                            <div class="services__content-img">
+                                <img src="img/services/robot.png" alt="robot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__items">
+                        <div class="services__item">
+                            <h3 class="services__work-title">Ремонт</h3>
+                            <div class="services__description">
+                                Ремонт станков и другого автоматизированного промышленного оборудования
+                            </div>
+                            <div class="services__img">
+                                <picture>
+                                <source srcset="img/services/1024/var1.svg" media="(max-width: 1024px)">
+                                <img src="img/services/repair.svg" alt="repair">
+                                </picture>
+                            </div>
+                            <button type="button" class="services__button">Подробнее</button>
+                        </div>
+                        <div class="services__item">
+                            <h3 class="services__work-title">Модернизация</h3>
+                            <div class="services__description">
+                                Установка ЧПУ, УЦИ, ПЛК и приводов различных производителей
+                            </div>
+                            <div class="services__img">
+                                <img src="img/services/modernization.svg" alt="modernization">
+                            </div>
+                            <button type="button" class="services__button">Подробнее</button>
+                        </div>
+                        <div class="services__item">
+                            <h3 class="services__work-title">Восстановление</h3>
+                            <div class="services__description">
+                                Восстановление утраченных архивов и программ логики у старых станков
+                            </div>
+                            <div class="services__img">
+                                <img src="img/services/recognation.svg" alt="recognation">
+                            </div>
+                            <button type="button" class="services__button">Подробнее</button>
+                        </div>
+                        <div class="services__item">
+                            <h3 class="services__work-title">Проектирование</h3>
+                            <div class="services__description">
+                                Разработка проектов на правах аутсорсинга
+                            </div>
+                            <div class="services__img">
+                                <img src="img/services/project.svg" alt="project">
+                            </div>
+                            <button type="button" class="services__button">Подробнее</button>
+                        </div>
+                        <div class="services__item">
+                            <h3 class="services__work-title">Электромонтаж</h3>
+                            <div class="services__description">
+                                Электромонтаж шкафов управления и пультов
+                            </div>
+                            <div class="services__img">
+                                <img src="img/services/installation.svg" alt="installation">
+                            </div>
+                            <button type="button" class="services__button">Подробнее</button>
+                        </div>
+                        <div class="services__item">
+                            <h3 class="services__work-title">Помощь в поиске</h3>
+                            <div class="services__description">
+                                Помощь в поиске запчастей и документации к старым станкам
+                            </div>
+                            <div class="services__img">
+                                <img src="img/services/magnifier.svg" alt="magnifier">
+                            </div>
+                            <button type="button" class="services__button __pop-up-button" data-pop-button="modal1">Подробнее</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="completed-works">
+                    <h3 class="completed-works__title section-title">Выполненные работы</h3>
+                    <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__element slide">
+                                        <h4>Фрезеровочные станки</h4>
+                                            <ul class="slide__list">
+                                                <li>2206ВМФ4</li>
+                                                <li>2550.0С1000МФ4</li>
+                                                <li>2А620Ф</li>
+                                                <li>2В622Ф4</li>
+                                                <li>2Е450АФ30</li>
+                                                <li>2636</li>
+                                                <li>2Н637ГФ1</li>
+                                                <li>CW800</li>
+                                                <li>Horizon 3</li>
+                                                <li>Knuth WF4.1</li>
+                                                <li>MAHO 2000C</li>
+                                            </ul>
+                                    <button type="button" class="slide__button">Читать дальше</button>
+                                    <div class="slede__img ibg">
+                                        <img src="img/slider/slide1.jpg" alt="slide1">
+                                    </div>
+                                </div>
+                            </div>
+                          
+
+                            <div class="swiper-slide">
+                                <div class="slider__element">
+                                    <h4>Шлифовальные станки</h4>
+                                    <ul class="slide__list">
+                                        <li>1049E Jones Shipma</li>
+                                        <li>3П722</li>
+                                        <li>SWR100 U-T-F</li>
+                                    </ul>
+                                    <button type="button" class="slide__button">Читать дальше</button>
+                                    <div class="slede__img ibg">
+                                        <img src="img/slider/slide2.jpg" alt="slide2">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slider__element">
+                                    <h4>Прессы</h4>
+                                    <ul class="slide__list">
+                                        <li>И1434 АП</li>
+                                        <li>ИВ3428</li>
+                                        <li>PYXA 630/800</li>
+                                    </ul>
+                                    <button type="button" class="slide__button">Читать дальше</button>
+                                    <div class="slede__img ibg">
+                                        <img src="img/slider/slide4.jpg" alt="slide3">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slider__element">
+                                    <h4 class="long-title">Зубообрабатывающие станки</h4>
+                                    <ul class="slide__list">
+                                        <li>5Б725</li>
+                                        <li>5С267П</li>
+                                        <li>5С277П</li>
+                                        <li>ZFWZ 800/3</li>
+                                        <li>СТ267П</li>
+                                    </ul>
+                                    <button type="button" class="slide__button">Читать дальше</button>
+                                    <div class="slede__img ibg">
+                                        <img src="img/slider/slide3.jpg" alt="slide4">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slider__element">
+                                    <h4>Токарные станки</h4>
+                                    <ul class="slide__list">
+                                        <li>16А20Ф3</li>
+                                        <li>16Б16Т1</li>
+                                        <li>16К20Ф3</li>
+                                        <li>1А751Ф3</li>
+                                        <li>EEN320</li>
+                                        <li>DS3/CNC</li>
+                                        <li>HT20SII</li>
+                                        <li>TRAUB TNA480L</li>
+                                        <li>UBB112</li>
+                                    </ul>
+                                    <button type="button" class="slide__button">Читать дальше</button>
+                                    <div class="slede__img ibg">
+                                        <img src="img/slider/slide5.jpg" alt="slide5">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide swiper-slide_last-slide">
+                                <div class="slider__element">
+                                    <h4>Другое</h4>
+                                    <ul class="slide__list">
+                                        <li>CNC600</li>
+                                        <li>Миксер 11кВт</li>
+                                        <li>Цифровой таймер</li>
+
+                                    </ul>
+                                    <button type="button" class="slide__button">Читать дальше</button>
+                                    <div class="slede__img ibg">
+                                        <img src="img/slider/slide6.jpg" alt="slide6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                       
+                      
+                        <div class="swiper-pagination"> </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      
+                        
+                     
+                      
+                         
+                        
+                    </div>
+                   
+                    <div class="slider__navigation">
+                    <div class="custom-button-prev initial"><img src="img/slider/arrow-prev.svg" alt="arrow-prev"></div>
+                    <div class="custom-button-next"><img src="img/slider/arrow-next.svg" alt="arrow-next"></div>
+                </div>
+                </section>
+                  <section class="additional-features">
+                    <h3 class="additional-features__title section-title">Дополнительные возможности</h3>
+                    <div class="additional-features__body">
+                        <div class="additional-features__text">
+                                <ul class="additional-features__list">
+                                    <li>Обширный репрозиторий технической документации</li>
+                                    <li>Сотрудничество с надежными поставщиками оборудования</li>
+                                    <li>Выезды за пределы Республики Беларусь</li>
+                                    <li>Обмен опытом с зарубежными компаниями в проектировании и модернизации</li>
+                                    <li>Беремся за решение нестандартных задач</li>
+                                </ul>
+                            </div>
+                            <div class="additional-features__img">
+                                <img src="img/slider/robot.png" alt="robot">
+                            </div>
+                        </div>
+                    </section>
+                <section class="get-consultation">
+                    <h3 class="get-consultation__title section-title">Получить консультацию</h3>
+                    <form class="get-consultation__form">
+                        <label for="tel">Введите ваш номер телефона</label>
+                        <input type="text" class="get-consultation__input" placeholder="+... (..) ... - .. - .." id="tel">
+                        <button type="button" class="get-consultation__button">Отправить</button>
+                    </form>
+                </section>
+          
+            </main>
+            <footer class="footer">
+                <div class="footer__wrapper">
+                    
+                        <div class="footer__contacts">
+                            <a class="footer_tel" href="#">tel:+375-29-362-71-83</a>
+                            <a class="footer_fax" href="#">Fax: +375-232-92-31-21</a>
+                            <a class="footer_email" href="#">Email: ip.petukhov@gmail.com</a>
+                        </div>
+                        <nav class="footer__nuv">
+                            <ul class="footer_list">
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Портфолио</a></li>
+                            </ul>
+                        </nav>
+                        <div class="footer__copyright-block">
+                            <a class="footer__title" href="#">© Copyright 2022 BECORS</a>
+                            <a class="footer__developer-reference" href="#">Разработка сайта:anlivanov</a>
+                        </div>
+                    
+                </div>
+                <div class="footer__logo">
+                    <h3 class="footer__title">BECORS</h3>
+                    <img  src="img/header/LOGO.svg">
+                </div>
+                <div class="footer__ibg ibg">
+                    <img src="img/footer/footer.jpg" alt="footer_ibg">
+                </div>
+            </footer>
+
+        <script src="js/burger.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/libs/swiper-bundle.min.js"></script>
+        <script src = "js/slider.js"></script>
+        <script src ="js/pop-up.js"></script>
+    </body>
+</html>
