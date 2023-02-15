@@ -1123,7 +1123,7 @@ body {
 }
 
 
-@media (hover) and (min-width: 768px) {
+@media (min-height:768px) and (min-width: 1200px) {
 .completed-works__title {
   display: flex;
   align-items: center;
