@@ -1,16 +1,17 @@
 const modalButtons = document.querySelectorAll(".__pop-up-button");
-const modals=document.querySelectorAll(".pop-up-element");
+const modals=document.querySelectorAll(".modal");
 const body = document.querySelector("body");
-const closeButton=document.querySelector(".pop-element__close-button");
+const closeButton=document.querySelector(".modal__cross");
 const submitButton=document.querySelector(".pop-up-element__submit-button");
+const startModal = document.querySelector(".start-modal");
 
 function openModal(elem){
     elem.classList.add("_active");
     body.classList.add("lock");
 }
 function closeModal(e){
-    if(e.target.closest(".pop-element__close-button")||e.target.classList.contains("pop-up-element__wrapper")||e.target.closest(".pop-up-element__submit-button")){
-   e.target.closest(".pop-up-element").classList.remove("_active");
+    if(e.target.closest(".modal__cross")||e.target.classList.contains(".modal")||e.target.closest(".pop-up-element__submit-button")){
+   e.target.closest(".modal").classList.remove("_active");
     body.classList.remove("lock");
     }
 
@@ -18,10 +19,12 @@ function closeModal(e){
 
 modalButtons.forEach((button)=>{
     button.addEventListener("pointerdown", function(e){
+        
         let dataID = button.dataset.popButton;
         modals.forEach(function(modal){
             if(dataID==modal.dataset.popUp){
                 openModal(modal);
+                
             }
           
         });
@@ -32,15 +35,17 @@ modalButtons.forEach((button)=>{
 })
 
 
-const startModal=document.querySelector(".pop-up-start__wrapper");
+
 document.addEventListener("DOMContentLoaded",function(e){
-    startModal.style.display="block";
+    startModal.classList.add("_active");
+    body.classList.add("lock");
 });
 
 document.addEventListener("pointerdown", function(e){
-if(e.target.closest(".__close")){
+if(e.target.closest(".start-modal-button")){
     
-    startModal.style.display="none";
+    startModal.classList.remove("_active");
+    body.classList.remove("lock");
 }
 
 });

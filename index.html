@@ -158,7 +158,9 @@
                 </section>
                 <section class="completed-works">
                     <h3 class="completed-works__title section-title">Выполненные работы</h3>
-                    <div class="swiper">
+    
+                    <div class="swiper__initial-container">
+                        <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="slider__element slide">
@@ -267,25 +269,26 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
+                 
+                      
                           
+               
+                      
+                            </div>
                        
-                      
-                        <div class="swiper-pagination"> </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                      
-                        
-                     
-                      
+                        <div class="swiper__navigation">
+                            <div class="swiper-button-prev initial"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+    
                          
                         
+                    
+                         
+              
                     </div>
-                   
-                    <div class="slider__navigation">
-                    <div class="custom-button-prev initial"><img src="img/slider/arrow-prev.svg" alt="arrow-prev"></div>
-                    <div class="custom-button-next"><img src="img/slider/arrow-next.svg" alt="arrow-next"></div>
-                </div>
                 </section>
                   <section class="additional-features">
                     <h3 class="additional-features__title section-title">Дополнительные возможности</h3>
@@ -345,6 +348,52 @@
                     <img src="img/footer/footer.jpg" alt="footer_ibg">
                 </div>
             </footer>
+        </div>
+
+       
+            <div class="modal" data-pop-up="modal1">
+                <div class="modal__body">
+                    <div class="modal__img ibg">
+                        <img src="img/modal/modal_background.jpg" alt="modal__img">
+                    </div>
+                    <div class="title__wrapper">
+                        <h3 class="modal__title">Оставить заявку</h3>
+                        <div class="modal__cross">×</div>
+                    </div>
+                    <form class="modal__form">
+                        <label for="modal__input-name" class="modal-input__label">Введите ваше имя:</label>
+                        <input class="modal__input" type="text" id="modal__input-name">
+                        <label for="modal__input-tel" class="modal-input__label">Введите ваш номер телефона:</label>
+                        <input class="modal__input" type="text" id="modal__input-tel" placeholder="+...()...-..-..">
+                        <button class="modal__button pop-up-element__submit-button">Отправить</button>
+                    </form>
+                    <div class="modal__background"></div>
+                </div>
+        </div>
+                <div class="start-modal">
+                    <div class="start-modal__body">
+                        <div class="start-modal__img ibg">
+                            <img src="img/modal/bg-2.jpg" alt="start-modal-cover">
+                        </div>
+                            <h3 class="start-modal__title">Внимание</h3>
+                            <p class="start-modal__text">
+                                Уважаемый посетитель, с сожалением сообщаем,что на данный момент все работы приостановлены. 
+                                Поддержка выполненных проектов осуществляется через E-mail. 
+                                Вы можете оставить заявку для связи с нами
+                            </p>
+                            <form class="start-modal__form">
+                                <label for="start-input__name" class="start-modal__label-name">Введите ваше имя:</label>
+                                <input type="text" class="start-modal__input-name start-modal-input" id="start-input__name">
+                                <label for="start-input__email" class="start-modal__label_email">Введите ваш email:</label>
+                                <input type="text" class="start-modal__input-email start-modal-input" id="start-input__email">
+                                <label for="start-modal__textarea" class="start-modal__textarea">Кратко опишите проблему</label>
+                                <textarea class="start-modal__textarea" id="start-modal__textarea"></textarea>
+                                <button class="start-modal__submit-button start-modal-button">Отправить</button>
+                                <button class="start-modal__close-button start-modal-button">К просмотру сайта</button>
+                            </form>
+                        <div class="start-modal__background"></div>
+                    </div>
+                </div>
 
         <script src="js/burger.js"></script>
         <script src="js/search.js"></script>

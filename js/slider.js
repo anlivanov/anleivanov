@@ -1,6 +1,6 @@
  
-  const arrowPrev=document.querySelector(".custom-button-prev");
-  const arrowNext = document.querySelector(".custom-button-next");
+  const arrowPrev=document.querySelector(".swiper-button-prev");
+  const arrowNext = document.querySelector(".swiper-button-next");
   const mainSwiper=document.querySelector(".swiper");
 const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -9,18 +9,23 @@ const swiper = new Swiper('.swiper', {
     slidesPerView:'auto',
     spaceBetween: 10,
     navigation:{
-      nextEl:".custom-button-next",
-      prevEl:".custom-button-prev",
+      nextEl:".swiper-button-next",
+      prevEl:".swiper-button-prev",
     },
-    touchRatio:5,
+    observer:true,
+    observeParents:true,
+    observeSlideChildren:true,
 
+    touchRatio:4,
 
+  
     breakpoints: {
       // when window width is >= 320px
 
       440: {
         slidesPerView:'auto',
         spaceBetween: 10,
+        loop: false,
         
       
     },
@@ -29,33 +34,37 @@ const swiper = new Swiper('.swiper', {
       640: {
         slidesPerView: 4,
         spaceBetween: 10,
+        loop: false,
       },
-      1200: {
-        slidesPerView: 1,
+      768: {
+        slidesPerView:1,
         spaceBetween: 0,
          loop: true,
-         navigation:{
-          nextEl:".swiper-button-next",
-          prevEl:".swiper-button-prev",
-        },
         pagination: {
           el: '.swiper-pagination',
           type: 'bullets',
         },
-      }
+        
+      },
     },
     on:{
       reachBeginning:function(){
+     
         arrowPrev.classList.add("initial");
         arrowNext.classList.remove("end");
         
-      },
-    reachEnd:function(){
       
+    },
+    reachEnd:function(){
+     
+
       arrowPrev.classList.remove("initial");
       arrowNext.classList.add("end");
+ 
+     },
+
+  
     },
-  },
 
   
     // If we need pagination
@@ -66,6 +75,19 @@ const swiper = new Swiper('.swiper', {
     // And if we need scrollbar
 
   });
+  const mediaQuery=window.addEventListener('resize', function(e){
+     if(window.innerWidth==768){
+    
+      swiper.update();
+      
+ 
+       
+        
+    
+     }
+  
+  });
+
 
   
 
